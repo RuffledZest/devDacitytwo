@@ -35,7 +35,7 @@ export default function Home() {
       const size = new Blob([html]).size / 1024 // Size in KB
       setFileSize(size)
 
-      if (size > 2000) {
+      if (size > 3000) {
         setError(`HTML file size (${size.toFixed(2)}KB) exceeds 100KB limit. Please use a smaller project.`)
         setIsLoading(false)
         return
@@ -69,7 +69,7 @@ export default function Home() {
       const size = new Blob([html]).size / 1024 // Size in KB
       setFileSize(size)
 
-      if (size > 2000) {
+      if (size > 3000) {
         setError(`HTML file size (${size.toFixed(2)}KB) exceeds 100KB limit. Please use a smaller project.`)
         setIsLoading(false)
         return
